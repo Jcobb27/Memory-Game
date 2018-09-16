@@ -6,7 +6,7 @@ const CharCard = props => (
 
 
         <div className="img-container">
-            <img alt={props.name} src={props.image} onClick={() => props.removeChar(props.id)} className="remove"/>
+            <img alt={props.name} src={props.image} onClick={() => props.clickChar(props.id)}/>
 
         </div>
 
