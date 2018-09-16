@@ -15,14 +15,16 @@ class App extends Component {
 
   clickChar = id => {
     console.log("----");
+    
     const match = this.state.clickedChars.filter(char => char === id);
     console.log("Match: " + match);
 
     if (match.length === 0 || this.state.clickedChars.length === 0) {
-      console.log("inside no match ");
-      this.setState({ score: this.state.score + 1 });
-
-
+      console.log("(inside no-match)");
+      var newScore = this.state.score + 1;
+      this.setState({ score: newScore});
+      this.checkScore();
+    
       // Filter this.state.chars for chars with an id equal to the id clicked
       const char = this.state.chars.filter(char => char.id === id);
       this.state.clickedChars.push(char[0].id);
@@ -41,10 +43,19 @@ class App extends Component {
     console.log("Score: " + this.state.score);
   };
 
+  checkScore = () => {
+     if (this.state.score >= this.state.topScore){
+       this.setState({topScore: this.state.topScore + 1})
+     }
+  }
+
   // Map over this.state.chars and render a CharCard component for each char object
   render() {
     return (
       <div>
+        <div>
+        Score: {this.state.score} | Top Score: {this.state.topScore}
+        </div>
 
         {this.state.chars.map(char => (
           <CharCard
