@@ -1,19 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import CharCard from "./components/CharCard";
+import chars from "./chars.json";
+import "./App.css";
 
 class App extends Component {
+
+  //setting this.state.chars to the chars json array
+  state = {
+    chars
+  };
+
+  removeChar = id => {
+    // Filter this.state.chars for chars with an id not equal to the id being removed
+    const chars = this.state.chars.filter(char => char.id !== id);
+    // Set this.state.friends equal to the new friends array
+    this.setState({ chars });
+  };
+
+  // Map over this.state.chars and render a CharCard component for each char object
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <div>
+       
+        {this.state.chars.map(char => (
+          <CharCard
+            removeChar={this.removeChar}
+            id={char.id}
+            key={char.id}
+            image={char.image}
+         
+          />
+        ))}
+        
+     </div>
     );
   }
 }

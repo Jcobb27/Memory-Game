@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Bart",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png/revision/latest?cb=20180319061933",
+        "clicked": false
+      },
+      {
+        "id": 2,
+        "name": "Edna",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/7/76/Edna_Krabappel.png/revision/latest?cb=20180723220624",
+        "clicked": false
+      },
+      {
+        "id": 3,
+        "name": "Homer",
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
+        "clicked": false
+      },
+      {
+        "id": 4,
+        "name": "Krusty",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/0/07/Tapped_Out_Unlock_Krusty.png/revision/latest?cb=20141120143301",
+        "clicked": false
+      },
+      {
+        "id": 5,
+        "name": "Lisa",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Lisa_Simpson.png/220px-Lisa_Simpson.png",
+        "clicked": false
+      },
+      {
+        "id": 6,
+        "name": "Maggie",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Maggie_Simpson.png/220px-Maggie_Simpson.png",
+        "clicked": false
+      },
+      {
+        "id": 7,
+        "name": "Marge",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/0/0b/Marge_Simpson.png/revision/latest?cb=20180626055729",
+        "clicked": false
+      },
+      {
+        "id": 8,
+        "name": "Millhouse",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/2/23/Milhouse_Van_Houten_%28Official_Image%29.png/revision/latest?cb=20120328080748",
+        "clicked": false
+      },
+      {
+        "id": 9,
+        "name": "Moe",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/8/80/Moe_Szyslak.png/revision/latest?cb=20170101190543",
+        "clicked": false
+      },
+      {
+        "id": 10,
+        "name": "Burns",
+        "image": "https://vignette.wikia.nocookie.net/simpsons/images/a/a7/Montgomery_Burns.png/revision/latest?cb=20100602062705",
+        "clicked": false
+      },
+      {
+        "id": 11,
+        "name": "Flanders",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Ned_Flanders.png/220px-Ned_Flanders.png",
+        "clicked": false
+      },
+      {
+        "id": 12,
+        "name": "Skinner",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Seymour_Skinner.png/220px-Seymour_Skinner.png",
+        "clicked": false
+      }
+]
