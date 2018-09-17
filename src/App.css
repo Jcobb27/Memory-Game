@@ -18,3 +18,8 @@ body {
 #mainSection {
   margin-bottom: 200px;
 }
+
+#guessResult {
+  float: right;
+  margin-right: 200px;
+}
